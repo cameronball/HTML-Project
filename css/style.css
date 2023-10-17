@@ -1,0 +1,62 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+	overflow: auto; 
+    background-color: #354f52;
+    color: #fff;
+}
+
+h1 {
+	font-family: 'Figtree', sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+}
+
+h2 {
+	font-family: 'Figtree', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.scroll-title-1, .scroll-title-2 {
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+
+.title-div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    margin-top: 125vh;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top:37.5vh;
+}
+
+.subtitle-divider {
+    width: 15%;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 200vh;
+    opacity: 0;
+    transition: all 0s;
+}
+
+.subtitle {
+    opacity: 0;
+    transition: all 0s;
+}
