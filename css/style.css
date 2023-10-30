@@ -21,6 +21,19 @@ h2 {
 	font-size: 24px;
 }
 
+h3 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 .scroll-title-1, .scroll-title-2 {
     transition: all 0.5s;
     white-space: nowrap;
@@ -51,12 +64,9 @@ h2 {
     width: 15%;
     height: 1px;
     background-color: #fff;
-    margin-bottom: 200vh;
-    opacity: 0;
-    transition: all 0s;
 }
 
-.subtitle {
+.main-content {
     opacity: 0;
     transition: all 0s;
 }
