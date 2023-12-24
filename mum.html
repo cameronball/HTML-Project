@@ -7,7 +7,6 @@
 }
 
 .confetti{
-   max-width: 640px;
    display: block;
    margin: 0 auto;
    border: 1px solid #ddd;
@@ -260,10 +259,6 @@ render = () => {
 
   window.requestAnimationFrame(render);
 };
-
-//---------Execution--------
-initConfetti();
-render();
 
 //----------Resize----------
 window.addEventListener('resize', function () {
