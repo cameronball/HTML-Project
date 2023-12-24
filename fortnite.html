@@ -51,7 +51,7 @@
   </head>
   <body>
   
-  <canvas id="canvas" width="1920" height="965"></canvas>
+  <canvas id="canvas" width="100vw" height="100vh"></canvas>
   <div class="center-container">
 		<img class="fortnite" src="https://i.ibb.co/n1TmnTv/201428-removebg-preview.png">
   </div>
@@ -86,9 +86,6 @@
 		flakeCount = 800,
 		mX = -100,
 		mY = -100
-
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
 
 	function snow() {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
