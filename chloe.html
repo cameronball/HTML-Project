@@ -95,16 +95,6 @@ body {
   margin: 0;
 }
 
-.present:active .lid {
-  top: -120px;
-  transform: rotateZ(20deg);
-  left: 10px;
-}
-
-.present:active .promo {
-  top: -30px;
-}
-
 body {
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -136,7 +126,7 @@ body {
     </div>
 
 <script>
-    document.querySelector('.present').addEventListener('click', function() {
+ document.querySelector('.present').addEventListener('click', function() {
   // Select all h1 elements on the page
   var h1Elements = document.querySelectorAll('h1');
 
@@ -144,6 +134,21 @@ body {
   h1Elements.forEach(function(h1) {
     h1.style.opacity = h1.style.opacity === '100%' ? '0%' : '100%';
   });
+
+  // Add styles for .lid and .promo
+  var lidElement = document.querySelector('.lid');
+  var promoElement = document.querySelector('.promo');
+
+  // Check if lidElement and promoElement exist before applying styles
+  if (lidElement) {
+    lidElement.style.top = '-120px';
+    lidElement.style.transform = 'rotateZ(20deg)';
+    lidElement.style.left = '10px';
+  }
+
+  if (promoElement) {
+    promoElement.style.top = '-30px';
+  }
 });
 </script>
 </body></html>
