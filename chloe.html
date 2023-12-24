@@ -111,8 +111,8 @@ body {
         <span></span>
       </div>
       <div class="promo" style="display: flex; min-height: 220px; top: 250px;">
-        <img src="https://i.ibb.co/n1TmnTv/201428-removebg-preview.png" style="width:55%;margin-left:10px;">
-        <img src="https://i.ibb.co/4mtBRgq/71an-O1tdn-ML-AC-SY741-removebg-preview.png" style="width:150px;">
+        <img class="fortnite" src="https://i.ibb.co/n1TmnTv/201428-removebg-preview.png" style="width:55%;margin-left:10px;">
+        <img class="roblox" src="https://i.ibb.co/4mtBRgq/71an-O1tdn-ML-AC-SY741-removebg-preview.png" style="width:150px;">
       </div>
       <div class="box">
         <span></span>
@@ -121,8 +121,9 @@ body {
     </div>
 
 <script>
+  var opened = 0;
  document.querySelector('.present').addEventListener('click', function() {
-  console.log(1);
+  opened = 1;
   // Select all h1 elements on the page
   var h1Elements = document.querySelectorAll('h1');
 
@@ -144,6 +145,16 @@ body {
 
   if (promoElement) {
     promoElement.style.top = '-30px';
+  }
+});
+document.querySelector('.fortnite').addEventListener('click', function() {
+  if (opened===1) {
+    console.log("fortnite");
+  }
+});
+document.querySelector('.roblox').addEventListener('click', function() {
+  if (opened===1) {
+    console.log("roblox");
   }
 });
 </script>
