@@ -12,7 +12,7 @@ body {
   font-family: "Itim", cursive;
   min-height: 100vh;
   margin: 0;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -113,7 +113,14 @@ body {
 }
 
 </style>
- <div class="present" id="present">
+ <center style="
+    height: 40%;
+"><h1 style="
+    opacity: 0;
+    font-size: 60px;
+    color: white;
+">Merry Christmas</h1></center>
+<div class="present" id="present">
       <div class="lid">
         <span></span>
       </div>
@@ -127,6 +134,15 @@ body {
       </div>
     </div>
 
+<script>
+    document.querySelector('.present').addEventListener('click', function() {
+  // Select all h1 elements on the page
+  var h1Elements = document.querySelectorAll('h1');
 
-
+  // Toggle the opacity of each h1 element
+  h1Elements.forEach(function(h1) {
+    h1.style.opacity = h1.style.opacity === '100%' ? '0%' : '100%';
+  });
+});
+</script>
 </body></html>
