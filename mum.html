@@ -1,0 +1,153 @@
+<html><head><title>Merry Christmas</title></head><body style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #232526; 
+  background: linear-gradient(to top,   #414345, #232526); 
+  font-family: sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.present {
+  width: 410px;
+  max-width: 90vw;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.box {
+  width: 400px;
+  max-width: 90vw;
+  height: 250px;
+}
+
+.box,
+.lid {
+  background: radial-gradient(white 15%, transparent 15.1%),
+    radial-gradient(white 15%, transparent 15.1%), rgb(240, 58, 58);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.lid {
+  width: 400px;
+  max-width: 90vw;
+  height: 70px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0 2px;
+  background-color: rgb(216, 52, 52);
+  top: 240px;
+  left: 0;
+  transition: top ease-out 0.5s, left ease-out 0.5s, transform ease-out 0.5s;
+}
+
+.box span,
+.lid span {
+  position: absolute;
+  display: block;
+  background: rgba(235, 199, 0, 0.8);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box span:first-child {
+  width: 100%;
+  height: 60px;
+  top: 80px;
+}
+
+.box span:last-child,
+.lid span {
+  width: 60px;
+  height: 100%;
+  left: 170px;
+}
+
+.promo {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 0;
+  top: 230px;
+  transition: all ease-out 0.7s;
+    margin-left:-10px;
+}
+
+.promo p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.promo h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px white);
+}
+
+</style>
+ <center style="
+    height: 40%;
+"><h1 style="opacity: 0; font-size: 60px; color: white; transition: opacity 0.5s ease 0s;">Merry Christmas</h1></center>
+<div class="present" id="present">
+      <div class="lid">
+        <span></span>
+      </div>
+      <div class="promo" style="display: flex; min-height: 220px; top: 250px;">
+        <img class="spotify" src="https://i.ibb.co/jHqmqkW/1171921-R-Z001-A-removebg-preview.png" style="width:55%;margin-left:10px;">
+      </div>
+      <div class="box">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+<script>
+  var opened = 0;
+ document.querySelector('.present').addEventListener('click', function() {
+  opened = 1;
+  // Select all h1 elements on the page
+  var h1Elements = document.querySelectorAll('h1');
+
+  // Toggle the opacity of each h1 element
+  h1Elements.forEach(function(h1) {
+    h1.style.opacity = h1.style.opacity === '100%' ? '0%' : '100%';
+  });
+
+  // Add styles for .lid and .promo
+  var lidElement = document.querySelector('.lid');
+  var promoElement = document.querySelector('.promo');
+
+  // Check if lidElement and promoElement exist before applying styles
+  if (lidElement) {
+    lidElement.style.top = '-120px';
+    lidElement.style.transform = 'rotateZ(20deg)';
+    lidElement.style.left = '10px';
+  }
+
+  if (promoElement) {
+    promoElement.style.top = '-30px';
+  }
+});
+</script>
+
+
+
+</body></html>
