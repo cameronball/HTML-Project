@@ -121,6 +121,21 @@ body {
     </div>
 
 <script>
+
+var h1Elements = document.querySelectorAll('h1');
+
+h1Elements.forEach(function(h1) {
+    h1.style.opacity = '100%';
+});
+
+var lidElement = document.querySelector('.lid');
+var promoElement = document.querySelector('.promo');
+lidElement.style.top = '120px';
+lidElement.style.transform = 'rotateZ(-20deg)';
+lidElement.style.left = '-10px';
+promoElement.style.top = '30px';
+
+     
  document.querySelector('.present').addEventListener('click', function() {
   console.log(1);
   // Select all h1 elements on the page
@@ -147,5 +162,6 @@ body {
   }
 });
 </script>
+
 
 </body></html>
